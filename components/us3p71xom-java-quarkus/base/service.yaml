@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: us3p71xom-java-quarkus
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: us3p71xom-java-quarkus 
+  name: us3p71xom-java-quarkus
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: us3p71xom-java-quarkus 
